@@ -29,7 +29,7 @@
     </head>
     <body>
         <?php require('header.php'); ?>
-        <h1>Dashboard</h1>
+        <h1>Welcome</h1>
         <main class='dashboard'>
             <?php if (isset($_GET['pcSuccess'])): ?>
                 <div class="happy-toast">Password changed successfully!</div>
