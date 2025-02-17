@@ -24,10 +24,38 @@ but no code was taken from there. All of the code below is original code.
 }
 
 /* Reset rules (spacing, font override) */
-html, body, header, main, footer, div, span, 
-p, h1, h2, h3, h4, h5, h6, ul, ol, li, 
-input, select, textarea, form, section, label,
-table, td, tr, th, form, fieldset, em, button, a {
+html,
+body,
+header,
+main,
+footer,
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+input,
+select,
+textarea,
+form,
+section,
+label,
+table,
+td,
+tr,
+th,
+form,
+fieldset,
+em,
+button,
+a {
     padding: 0;
     margin: 0;
     font-size: inherit;
@@ -101,7 +129,7 @@ body {
     font-family: Montserrat;
 }
 
-header > img {
+header>img {
     height: 5rem;
 }
 
@@ -116,7 +144,8 @@ nav {
     font-weight: 300;
 }
 
-header ul > li, header span {
+header ul>li,
+header span {
     font-size: 0.75rem;
     list-style-type: none;
 }
@@ -132,7 +161,7 @@ nav ul {
 }
 
 nav img {
-    height: 3rem;
+    height: 1rem;
 }
 
 nav ul li a {
@@ -221,8 +250,16 @@ main:not(.login):not(.calendar-view):not(.dashboard) {
 
 /* Form Controls */
 
-input[type=text], input[type=password], input[type=date], input[type=email], input[type=number], 
-input[type=tel], select, textarea, .pseudo-input, .pseudo-input-disabled {
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=tel],
+select,
+textarea,
+.pseudo-input,
+.pseudo-input-disabled {
     border: var(--text-field-border);
     border-radius: 0;
     padding: 0.5rem;
@@ -232,18 +269,33 @@ input[type=tel], select, textarea, .pseudo-input, .pseudo-input-disabled {
     scroll-margin: 7.5rem;
 }
 
-input[type=text]:disabled, input[type=password]:disabled, input[type=date]:disabled, input[type=number]:disabled,
-input[type=email]:disabled, input[type=tel]:disabled, select:disabled, textarea:disabled,
+input[type=text]:disabled,
+input[type=password]:disabled,
+input[type=date]:disabled,
+input[type=number]:disabled,
+input[type=email]:disabled,
+input[type=tel]:disabled,
+select:disabled,
+textarea:disabled,
 .pseudo-input-disabled {
     background-color: var(--inactive-background-color);
     color: var(--inactive-font-color);
 }
 
-input[type=text]:focus, input[type=password]:active, input[type=email]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, select:active, textarea:focus {
+input[type=text]:focus,
+input[type=password]:active,
+input[type=email]:focus,
+input[type=date]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+select:active,
+textarea:focus {
     outline: var(--text-field-border);
 }
 
-input[type=submit], button, .button {
+input[type=submit],
+button,
+.button {
     color: var(--button-font-color);
     background-color: var(--main-color);
     padding: var(--button-padding);
@@ -257,7 +309,9 @@ input[type=submit], button, .button {
     text-align: center;
 }
 
-input[type=submit]:hover, button:hover, .button:hover {
+input[type=submit]:hover,
+button:hover,
+.button:hover {
     background-color: var(--accent-color);
 }
 
@@ -273,7 +327,7 @@ label {
 }
 
 /* Login Form */
-main.login > form {
+main.login>form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,7 +337,7 @@ main.login > form {
     gap: 0.5rem;
 }
 
-main.login > form > p {
+main.login>form>p {
     width: 100%;
     text-align: center;
 }
@@ -294,7 +348,7 @@ main.login {
     align-items: center;
 }
 
-main.login > p {
+main.login>p {
     margin-bottom: 1rem;
 }
 
@@ -415,7 +469,8 @@ main.calendar-view th {
 
 @media only screen and (max-width: 900px) {
 
-    div#table-wrapper, div.table-wrapper {
+    div#table-wrapper,
+    div.table-wrapper {
         overflow-x: auto;
     }
 
@@ -479,7 +534,8 @@ h1.calendar-header a {
     word-wrap: none;
 }
 
-#previous-month-button, #next-month-button {
+#previous-month-button,
+#next-month-button {
     height: 2rem;
     filter: invert();
     cursor: pointer;
@@ -508,17 +564,19 @@ h1.calendar-header a {
     margin: 0.5rem;
 }
 
-#month-jumper > div {
+#month-jumper>div {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
 }
 
-button.cancel, a.cancel {
+button.cancel,
+a.cancel {
     background-color: var(--cancel-button-background-color);
 }
 
-button.cancel:hover, a.cancel:hover {
+button.cancel:hover,
+a.cancel:hover {
     background-color: var(--accent-color);
 }
 
@@ -531,7 +589,7 @@ main.dashboard {
     padding: 0 8rem 4rem 8rem;
 }
 
-main.dashboard > p {
+main.dashboard>p {
     text-align: center;
     margin-bottom: 0.5rem;
 }
@@ -570,7 +628,7 @@ main.dashboard > p {
     text-shadow: 0px 0px .25rem black;
 }
 
-.dashboard-item > img {
+.dashboard-item>img {
     filter: invert();
     height: 4rem;
 }
@@ -580,6 +638,7 @@ main.dashboard > p {
         padding: 1rem;
 
     }
+
     #dashboard {
         gap: 1rem;
     }
@@ -606,14 +665,14 @@ form.signup-form {
     flex-direction: column;
 }
 
-form.signup-form > fieldset {
+form.signup-form>fieldset {
     padding: 1.5rem;
     display: flex;
     gap: .5rem;
     flex-direction: column;
 }
 
-form.signup-form > fieldset > label {
+form.signup-form>fieldset>label {
     margin-bottom: -.25rem;
 }
 
@@ -632,7 +691,7 @@ form.signup-form em {
     gap: 1rem;
 }
 
-.radio-group > label {
+.radio-group>label {
     font-weight: 300;
     width: fit-content;
     margin-left: -.75rem;
@@ -709,10 +768,12 @@ main.date p.none-scheduled {
         flex-direction: column;
         align-items: center;
     }
-    main.date > * {
+
+    main.date>* {
         width: 80%;
     }
-    main.date > span {
+
+    main.date>span {
         text-align: left;
     }
 }
@@ -736,7 +797,7 @@ table.event th {
     cursor: pointer;
 }
 
-table.event tr:first-of-type > td {
+table.event tr:first-of-type>td {
     padding-top: 1rem;
 }
 
@@ -765,10 +826,12 @@ main.search-form form {
         width: 100%;
         align-items: center;
     }
-    main.search-form > * {
+
+    main.search-form>* {
         width: 80%;
     }
-    main.search-form > span {
+
+    main.search-form>span {
         text-align: left;
     }
 }
@@ -799,7 +862,8 @@ tr.media img {
 }
 
 /* General Use (used by User Search, ...) */
-main.general, form.general {
+main.general,
+form.general {
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -813,7 +877,7 @@ main.general fieldset {
     flex-direction: column;
 }
 
-main.general fieldset > label:not(:first-of-type) {
+main.general fieldset>label:not(:first-of-type) {
     margin-top: 0.5rem;
 }
 
@@ -836,7 +900,8 @@ table.general th {
     font-weight: 500;
 }
 
-table.general th, table.general td {
+table.general th,
+table.general td {
     padding: 1rem;
     white-space: nowrap;
 }
@@ -852,7 +917,9 @@ table.general th, table.general td {
 }
 
 @media only screen and (min-width: 1024px) {
-    main.general, form.general {
+
+    main.general,
+    form.general {
         margin: 0rem 8rem 4rem 8rem;
     }
 }
@@ -868,11 +935,11 @@ table.general th, table.general td {
 
 
 img.profile-pic {
-	object-fit: cover;
+    object-fit: cover;
 }
 
 .pic_update_message {
-  color: green;
+    color: green;
 }
 
 .link-like {
@@ -886,7 +953,7 @@ img.profile-pic {
     justify-content: flex-start;
 }
 
-.form-row > label {
+.form-row>label {
     width: auto;
 }
 
