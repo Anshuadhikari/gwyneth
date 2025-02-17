@@ -36,7 +36,7 @@ session_start();
                 session_unset();
                 session_write_close();
                 ?>
-                <p class="happy-toast centered">You have been logged out.</p>
+                <p class="happy-toast centered">You have logged out of the session.</p>
         </main>
     </body>
 </html>
