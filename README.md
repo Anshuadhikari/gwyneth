@@ -9,6 +9,8 @@ Modifications to the original Homebase code were made by the Fall 2022 semester'
 
 A major overhaul to the existing system took place during the Spring 2023 semester, throwing out and restructuring many of the existing database tables. Very little original Homebase code remains. This team consisted of Lauren Knight, Zack Burnley, Matt Nguyen, Rishi Shankar, Alip Yalikun, and Tamra Arant. Every page and feature of the app was changed by this team.
 
+Modifications to the original Spring 2023 semester were made by the Spring 2025 semester's group of students. That team consisted of Anshu Adhikari,
+
 ## User Types
 There are three types of users (also referred to as 'roles') within the VMS.
 * Volunteers
