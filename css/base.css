@@ -71,7 +71,7 @@ a {
 
 :root {
     /* CSS variables that will be used across the page */
-    --page-background-color: #545450;
+    --page-background-color: #818107;
     --page-font-color: #333333;
     --inactive-font-color: #d0d0d0;
     --inactive-background-color: #f0f0f0;
@@ -88,7 +88,7 @@ a {
 
     --shadow-and-border-color: #e8e8e8;
 
-    --main-color: #2f4159;
+    --main-color: #2f5945;
     --accent-color: #f5c16e;
     --secondary-accent-color: #f6a4b5;
 
